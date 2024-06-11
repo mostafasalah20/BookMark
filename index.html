@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMark</title>
+    <link rel="shortcut icon" href="images/bookmark.png" type="image/x-icon">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- fonts -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styel.css">
+    <title>Document</title>
+</head>
+
+<body class="position-relative">
+
+    
+    <header class=" d-flex justify-content-end me-3 mt-3">
+        <label class="toggle" for="toggle">
+            <i id="sunMode" class="fa-regular fa-sun "></i>
+            <i id="moonMode" class="fa-solid fa-moon "></i>
+            <span class="ball"></span>
+        </label>
+    </header>
+
+    <div class="container">
+        <div class="contaner  d-flex justify-content-center align-items-center">
+        <h1 id="h1" class="h1  mt-5 mb-5">BookMarker</h1>
+        </div>
+        
+        <hr>
+        <div class="contact  text-center">
+            <h2 class="mt-5 mb-5">
+
+                <i class="fa-solid fa-bookmark"></i>
+                Bookmark your favorite sites
+                <i class="fa-solid fa-bookmark"></i>
+            </h2>
+            <label for="" class="label d-flex mb-3 mt-3">
+                <i class="fa-solid fa-book-bookmark pe-2"></i>
+                Site Name
+            </label>
+
+            <input type="text" placeholder="Bookmark Name" class="form-control" oninput="validateName()" id="inputMark">
+
+
+            <label for="" class="label d-flex mb-3 mt-3">
+                <i class="fa-solid fa-link pe-2"></i>
+                Site URL
+            </label>
+            <input type="text" placeholder="Website URL" class="form-control" oninput="validationUrl()" id="UrlMark">
+            <button type="button" class="submit mt-5 btn " id="sumbtn">submit</button>
+            <button type="button" class="create mt-5 btn  d-none" id="create">create</button>
+        </div>
+
+        <hr class="mt-4 mb-5">
+        <input type="search" placeholder='search' class="form-control" id="search">
+        <table class="table mt-4 text-center bg-white ">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <!-- <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td><a href="https://web.whatsapp.com/"class="btn btn-info" target="_blank">Visit</a></td>
+                        <td><a class="btn btn-success">Update</button></td>
+                        <td><button  class="btn btn-danger">Delete</button></td>
+                    </tr> -->
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="script/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+body {
+    background-color: #f4e9db;
+}
+
+.toggle {
+    cursor: pointer;
+    display: flex;
+    width: 100px;
+    height: 60px;
+    border-radius: 50px;
+    justify-content: space-between;
+    border: #49454586 solid 2px;
+}
+
+.toggle i {
+    width: 50%;
+    line-height: 60px;
+    font-size: 30px;
+    text-align: center;
+}
+h1 {
+    font-family: "Pacifico";
+    font-size: 50px;
+    position: relative;
+    width: 20%;
+}
+h1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-color: #f09b12e0;
+    height: 25%;
+    bottom: 10px;
+    left: 0;
+    transition: height 350ms ;
+    z-index: -1;
+}
+h1:hover::before {
+    height: 50%;
+
+}
+
+h2 {
+    background-image: linear-gradient(to right, #285034, #ffea00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#sumbtn {
+    background-color: #d1512d;
+    color: #fff;
+    width: 150px;
+}
+
+#create {
+    width: 150px;
+    color: #fff;
+    background-color: teal;
+}
+
+.dark {
+    background-color: #121212;
+}
+
+.darkColor {
+    color: #fff;
+}
